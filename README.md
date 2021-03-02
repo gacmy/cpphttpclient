@@ -1,4 +1,4 @@
-#Low-Level cpphttpclient
+# Low-Level cpphttpclient
 
 ## Development Environment: Ubuntu 
 
@@ -16,3 +16,5 @@
 * json param
 * callback
 * redirect
+
+> **target:** to stduy cpp and learn http protocol
