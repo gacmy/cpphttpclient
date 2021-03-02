@@ -1,0 +1,109 @@
+#include "http_parser.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "httpurl.h"
+#include "../utils/util.h"
+#include "request.h"
+
+using namespace std;
+
+
+void test_http_parser(){
+  const char* url = "http://www.google.com/search?q=flutter+cookbook&oq=flutter+cookbook&aqs=chrome..69i57j0l5j69i60l2.5432j0j4&sourceid=chrome&ie=UTF-8"; 
+  struct http_parser_url parser_url;
+  struct http_parser parser;
+
+  http_parser_init(&parser, http_parser_type::HTTP_REQUEST);
+
+  int ret = http_parser_parse_url(url, sizeof(url), 0, &parser_url); 
+  if(ret != 0){
+    printf("parser url failed\n");
+    exit(-1); 
+  }
+  printf("port:%d\n",parser_url.port);
+  printf("host:off=%d len=%d \n\n ",parser_url.field_data[http_parser_url_fields::UF_HOST].off,
+      parser_url.field_data[http_parser_url_fields::UF_HOST].len); 
+
+}
+
+void testString(){
+  string str = " https://www.bfff.com";
+  int pos = str.find_first_of("http");
+  printf("pos = %d\n",pos); 
+}
+
+void testHttpurl(){
+  HttpUrl url;  
+  url.parseUrl("https://www.google.com/search");
+  printf("scheme:%s\n",url.getScheme().c_str());   
+  printf("host:%s\n",url.getHost().c_str());
+  printf("port:%d\n",url.getPort());
+
+  vector<string> vec = url.getPath();
+  for(string s:vec){
+    printf("path=%s\n",s.c_str());
+  }
+
+  vector<string> query = url.getQuery();
+
+  for(string q:query){
+    printf("query:%s\n",q.c_str());
+  }
+}
+void testGet(){
+  Request request("",Request::GET); 
+  request.addHead("User-Agent", "cpphttp");
+  request.addHead("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+  request.addHead("Accept-Encoding"," gzip, deflate, sdch");
+  request.request();
+}
+
+//api/app/getVersion
+void testGet1(){
+  Request request("",Request::GET); 
+  request.addHead("User-Agent", "cpphttp");
+  request.addHead("plat", "pad");
+  request.addHead("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
+  request.addHead("Accept-Encoding"," gzip, deflate, sdch");
+  request.request();
+}
+
+
+
+void testPost(){
+  Request request("",Request::POST); 
+  request.addHead("User-Agent", "cpphttp");
+  //request.addHead("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+  request.addHead("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+  request.addHead("Accept-Encoding"," gzip, deflate, sdch");
+  request.addParam("cabinCode", "SYH00128")
+    .addParam("oldVersion", "1.0")
+    .addParam("originVersion","1.2")
+    .addParam("versionLog", "cppclient")
+    .addParam("versionStatus", "1");
+  request.request();
+}
+
+
+
+void testSpilt(){
+  string source = "/a";
+  string deli = "/";
+  vector<string> vec;
+  HttpUtil::spilt(source,deli,0,source.size(),vec); 
+  printf("size:=%ld\n",vec.size());
+  for(string s:vec){
+    printf("s=%s\n",s.c_str());
+  }
+}
+
+int main(){
+  //test_http_parser();
+  //testString();
+  //testHttpurl();
+  //testSpilt();
+  //testGet();
+  //testGet();
+  testPost();
+}
+

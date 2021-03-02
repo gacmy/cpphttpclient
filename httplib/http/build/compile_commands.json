@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/test.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/test.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/test.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/dns.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/dns.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/dns.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/request.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/request.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/request.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/http_parser.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/http_parser.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/http_parser.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/httpurl.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httpurl.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/httpurl.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/httphead.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httphead.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/httphead.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/buffersocket.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/buffersocket.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/buffersocket.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp"
+}
+]
