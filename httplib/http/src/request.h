@@ -3,7 +3,7 @@
 #include <string>
 #include "httpurl.h"
 #include "httphead.h"
-#include "../cppokio/buffer.h"
+#include "./cppokio/buffer.h"
 
 
 class Request{

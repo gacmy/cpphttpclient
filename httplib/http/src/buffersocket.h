@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>      /* sockaddr_in{} and other Internet defns */
 #include <arpa/inet.h>       /* inet(3) functions */
-#include "../cppokio/buffer.h"
+#include "./cppokio/buffer.h"
 
 
 using namespace std;

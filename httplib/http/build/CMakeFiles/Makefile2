@@ -54,32 +54,74 @@ CMAKE_BINARY_DIR = /home/gacmy/project/android_lib/cpphttpclient/httplib/http/bu
 
 # The main recursive "all" target.
 all: CMakeFiles/httpclient.dir/all
+all: src/cppokio/all
+all: src/thread/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/cppokio/preinstall
+preinstall: src/thread/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/httpclient.dir/clean
+clean: src/cppokio/clean
+clean: src/thread/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/cppokio
+
+# Recursive "all" directory target.
+src/cppokio/all: src/cppokio/CMakeFiles/cppokio.dir/all
+
+.PHONY : src/cppokio/all
+
+# Recursive "preinstall" directory target.
+src/cppokio/preinstall:
+
+.PHONY : src/cppokio/preinstall
+
+# Recursive "clean" directory target.
+src/cppokio/clean: src/cppokio/CMakeFiles/cppokio.dir/clean
+
+.PHONY : src/cppokio/clean
+
+#=============================================================================
+# Directory level rules for directory src/thread
+
+# Recursive "all" directory target.
+src/thread/all: src/thread/CMakeFiles/gthread.dir/all
+
+.PHONY : src/thread/all
+
+# Recursive "preinstall" directory target.
+src/thread/preinstall:
+
+.PHONY : src/thread/preinstall
+
+# Recursive "clean" directory target.
+src/thread/clean: src/thread/CMakeFiles/gthread.dir/clean
+
+.PHONY : src/thread/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/httpclient.dir
 
 # All Build rule for target.
-CMakeFiles/httpclient.dir/all:
+CMakeFiles/httpclient.dir/all: src/cppokio/CMakeFiles/cppokio.dir/all
+CMakeFiles/httpclient.dir/all: src/thread/CMakeFiles/gthread.dir/all
 	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/depend
 	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target httpclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19 "Built target httpclient"
 .PHONY : CMakeFiles/httpclient.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/httpclient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/httpclient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 0
 .PHONY : CMakeFiles/httpclient.dir/rule
@@ -93,6 +135,60 @@ httpclient: CMakeFiles/httpclient.dir/rule
 CMakeFiles/httpclient.dir/clean:
 	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/clean
 .PHONY : CMakeFiles/httpclient.dir/clean
+
+#=============================================================================
+# Target rules for target src/cppokio/CMakeFiles/cppokio.dir
+
+# All Build rule for target.
+src/cppokio/CMakeFiles/cppokio.dir/all:
+	$(MAKE) -f src/cppokio/CMakeFiles/cppokio.dir/build.make src/cppokio/CMakeFiles/cppokio.dir/depend
+	$(MAKE) -f src/cppokio/CMakeFiles/cppokio.dir/build.make src/cppokio/CMakeFiles/cppokio.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=1,2,3,4 "Built target cppokio"
+.PHONY : src/cppokio/CMakeFiles/cppokio.dir/all
+
+# Build rule for subdir invocation for target.
+src/cppokio/CMakeFiles/cppokio.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/cppokio/CMakeFiles/cppokio.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 0
+.PHONY : src/cppokio/CMakeFiles/cppokio.dir/rule
+
+# Convenience name for target.
+cppokio: src/cppokio/CMakeFiles/cppokio.dir/rule
+
+.PHONY : cppokio
+
+# clean rule for target.
+src/cppokio/CMakeFiles/cppokio.dir/clean:
+	$(MAKE) -f src/cppokio/CMakeFiles/cppokio.dir/build.make src/cppokio/CMakeFiles/cppokio.dir/clean
+.PHONY : src/cppokio/CMakeFiles/cppokio.dir/clean
+
+#=============================================================================
+# Target rules for target src/thread/CMakeFiles/gthread.dir
+
+# All Build rule for target.
+src/thread/CMakeFiles/gthread.dir/all:
+	$(MAKE) -f src/thread/CMakeFiles/gthread.dir/build.make src/thread/CMakeFiles/gthread.dir/depend
+	$(MAKE) -f src/thread/CMakeFiles/gthread.dir/build.make src/thread/CMakeFiles/gthread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Built target gthread"
+.PHONY : src/thread/CMakeFiles/gthread.dir/all
+
+# Build rule for subdir invocation for target.
+src/thread/CMakeFiles/gthread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/thread/CMakeFiles/gthread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles 0
+.PHONY : src/thread/CMakeFiles/gthread.dir/rule
+
+# Convenience name for target.
+gthread: src/thread/CMakeFiles/gthread.dir/rule
+
+.PHONY : gthread
+
+# clean rule for target.
+src/thread/CMakeFiles/gthread.dir/clean:
+	$(MAKE) -f src/thread/CMakeFiles/gthread.dir/build.make src/thread/CMakeFiles/gthread.dir/clean
+.PHONY : src/thread/CMakeFiles/gthread.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

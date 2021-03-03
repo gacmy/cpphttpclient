@@ -1,3 +1,9 @@
 /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles/rebuild_cache.dir
 /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles/edit_cache.dir
 /home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles/httpclient.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/cppokio/CMakeFiles/rebuild_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/cppokio/CMakeFiles/edit_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/cppokio/CMakeFiles/cppokio.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/thread/CMakeFiles/rebuild_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/thread/CMakeFiles/edit_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/src/thread/CMakeFiles/gthread.dir

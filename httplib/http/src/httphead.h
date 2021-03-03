@@ -12,10 +12,9 @@ class HttpHead{
     HttpHead(const HttpHead& head) = delete;
 
     HttpHead& operator=(const HttpHead&);
-    
     void add(string key,string value);
 
-    string get(string& key);
+    string get(const string& key);
 
     void add(const string& content);
 
@@ -27,7 +26,6 @@ class HttpHead{
 
   private:
    vector<string> mHead; 
-    
 };
 
 #endif

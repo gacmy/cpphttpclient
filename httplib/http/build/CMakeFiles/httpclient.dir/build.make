@@ -57,180 +57,137 @@ include CMakeFiles/httpclient.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/httpclient.dir/flags.make
 
-CMakeFiles/httpclient.dir/test.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpclient.dir/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/test.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/test.cpp
+CMakeFiles/httpclient.dir/src/test.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/test.cpp.o: ../src/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpclient.dir/src/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/test.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/test.cpp
 
-CMakeFiles/httpclient.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/test.cpp > CMakeFiles/httpclient.dir/test.cpp.i
+CMakeFiles/httpclient.dir/src/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/test.cpp > CMakeFiles/httpclient.dir/src/test.cpp.i
 
-CMakeFiles/httpclient.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/test.cpp -o CMakeFiles/httpclient.dir/test.cpp.s
+CMakeFiles/httpclient.dir/src/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/test.cpp -o CMakeFiles/httpclient.dir/src/test.cpp.s
 
-CMakeFiles/httpclient.dir/dns.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/dns.cpp.o: ../dns.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httpclient.dir/dns.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/dns.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/dns.cpp
+CMakeFiles/httpclient.dir/src/dns.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/dns.cpp.o: ../src/dns.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httpclient.dir/src/dns.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/dns.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/dns.cpp
 
-CMakeFiles/httpclient.dir/dns.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/dns.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/dns.cpp > CMakeFiles/httpclient.dir/dns.cpp.i
+CMakeFiles/httpclient.dir/src/dns.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/dns.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/dns.cpp > CMakeFiles/httpclient.dir/src/dns.cpp.i
 
-CMakeFiles/httpclient.dir/dns.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/dns.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/dns.cpp -o CMakeFiles/httpclient.dir/dns.cpp.s
+CMakeFiles/httpclient.dir/src/dns.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/dns.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/dns.cpp -o CMakeFiles/httpclient.dir/src/dns.cpp.s
 
-CMakeFiles/httpclient.dir/request.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/request.cpp.o: ../request.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httpclient.dir/request.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/request.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/request.cpp
+CMakeFiles/httpclient.dir/src/request.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/request.cpp.o: ../src/request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httpclient.dir/src/request.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/request.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/request.cpp
 
-CMakeFiles/httpclient.dir/request.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/request.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/request.cpp > CMakeFiles/httpclient.dir/request.cpp.i
+CMakeFiles/httpclient.dir/src/request.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/request.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/request.cpp > CMakeFiles/httpclient.dir/src/request.cpp.i
 
-CMakeFiles/httpclient.dir/request.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/request.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/request.cpp -o CMakeFiles/httpclient.dir/request.cpp.s
+CMakeFiles/httpclient.dir/src/request.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/request.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/request.cpp -o CMakeFiles/httpclient.dir/src/request.cpp.s
 
-CMakeFiles/httpclient.dir/http_parser.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/http_parser.cpp.o: ../http_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpclient.dir/http_parser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/http_parser.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/http_parser.cpp
+CMakeFiles/httpclient.dir/src/http_parser.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/http_parser.cpp.o: ../src/http_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpclient.dir/src/http_parser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/http_parser.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/http_parser.cpp
 
-CMakeFiles/httpclient.dir/http_parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/http_parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/http_parser.cpp > CMakeFiles/httpclient.dir/http_parser.cpp.i
+CMakeFiles/httpclient.dir/src/http_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/http_parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/http_parser.cpp > CMakeFiles/httpclient.dir/src/http_parser.cpp.i
 
-CMakeFiles/httpclient.dir/http_parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/http_parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/http_parser.cpp -o CMakeFiles/httpclient.dir/http_parser.cpp.s
+CMakeFiles/httpclient.dir/src/http_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/http_parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/http_parser.cpp -o CMakeFiles/httpclient.dir/src/http_parser.cpp.s
 
-CMakeFiles/httpclient.dir/httpurl.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/httpurl.cpp.o: ../httpurl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpclient.dir/httpurl.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/httpurl.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httpurl.cpp
+CMakeFiles/httpclient.dir/src/httpurl.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/httpurl.cpp.o: ../src/httpurl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpclient.dir/src/httpurl.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/httpurl.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httpurl.cpp
 
-CMakeFiles/httpclient.dir/httpurl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/httpurl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httpurl.cpp > CMakeFiles/httpclient.dir/httpurl.cpp.i
+CMakeFiles/httpclient.dir/src/httpurl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/httpurl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httpurl.cpp > CMakeFiles/httpclient.dir/src/httpurl.cpp.i
 
-CMakeFiles/httpclient.dir/httpurl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/httpurl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httpurl.cpp -o CMakeFiles/httpclient.dir/httpurl.cpp.s
+CMakeFiles/httpclient.dir/src/httpurl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/httpurl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httpurl.cpp -o CMakeFiles/httpclient.dir/src/httpurl.cpp.s
 
-CMakeFiles/httpclient.dir/httphead.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/httphead.cpp.o: ../httphead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpclient.dir/httphead.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/httphead.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httphead.cpp
+CMakeFiles/httpclient.dir/src/httphead.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/httphead.cpp.o: ../src/httphead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpclient.dir/src/httphead.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/httphead.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httphead.cpp
 
-CMakeFiles/httpclient.dir/httphead.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/httphead.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httphead.cpp > CMakeFiles/httpclient.dir/httphead.cpp.i
+CMakeFiles/httpclient.dir/src/httphead.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/httphead.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httphead.cpp > CMakeFiles/httpclient.dir/src/httphead.cpp.i
 
-CMakeFiles/httpclient.dir/httphead.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/httphead.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/httphead.cpp -o CMakeFiles/httpclient.dir/httphead.cpp.s
+CMakeFiles/httpclient.dir/src/httphead.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/httphead.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/httphead.cpp -o CMakeFiles/httpclient.dir/src/httphead.cpp.s
 
-CMakeFiles/httpclient.dir/buffersocket.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/buffersocket.cpp.o: ../buffersocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpclient.dir/buffersocket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/buffersocket.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/buffersocket.cpp
+CMakeFiles/httpclient.dir/src/buffersocket.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/buffersocket.cpp.o: ../src/buffersocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpclient.dir/src/buffersocket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/buffersocket.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/buffersocket.cpp
 
-CMakeFiles/httpclient.dir/buffersocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/buffersocket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/buffersocket.cpp > CMakeFiles/httpclient.dir/buffersocket.cpp.i
+CMakeFiles/httpclient.dir/src/buffersocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/buffersocket.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/buffersocket.cpp > CMakeFiles/httpclient.dir/src/buffersocket.cpp.i
 
-CMakeFiles/httpclient.dir/buffersocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/buffersocket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/buffersocket.cpp -o CMakeFiles/httpclient.dir/buffersocket.cpp.s
+CMakeFiles/httpclient.dir/src/buffersocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/buffersocket.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/buffersocket.cpp -o CMakeFiles/httpclient.dir/src/buffersocket.cpp.s
 
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o: /home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp
+CMakeFiles/httpclient.dir/src/utils/util.cpp.o: CMakeFiles/httpclient.dir/flags.make
+CMakeFiles/httpclient.dir/src/utils/util.cpp.o: ../src/utils/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpclient.dir/src/utils/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/src/utils/util.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/utils/util.cpp
 
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp > CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i
+CMakeFiles/httpclient.dir/src/utils/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/src/utils/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/utils/util.cpp > CMakeFiles/httpclient.dir/src/utils/util.cpp.i
 
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o: /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp > CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o: /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp > CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o: CMakeFiles/httpclient.dir/flags.make
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o: /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp > CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i
-
-CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp -o CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s
+CMakeFiles/httpclient.dir/src/utils/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpclient.dir/src/utils/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/utils/util.cpp -o CMakeFiles/httpclient.dir/src/utils/util.cpp.s
 
 # Object files for target httpclient
 httpclient_OBJECTS = \
-"CMakeFiles/httpclient.dir/test.cpp.o" \
-"CMakeFiles/httpclient.dir/dns.cpp.o" \
-"CMakeFiles/httpclient.dir/request.cpp.o" \
-"CMakeFiles/httpclient.dir/http_parser.cpp.o" \
-"CMakeFiles/httpclient.dir/httpurl.cpp.o" \
-"CMakeFiles/httpclient.dir/httphead.cpp.o" \
-"CMakeFiles/httpclient.dir/buffersocket.cpp.o" \
-"CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o" \
-"CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o" \
-"CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o" \
-"CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o"
+"CMakeFiles/httpclient.dir/src/test.cpp.o" \
+"CMakeFiles/httpclient.dir/src/dns.cpp.o" \
+"CMakeFiles/httpclient.dir/src/request.cpp.o" \
+"CMakeFiles/httpclient.dir/src/http_parser.cpp.o" \
+"CMakeFiles/httpclient.dir/src/httpurl.cpp.o" \
+"CMakeFiles/httpclient.dir/src/httphead.cpp.o" \
+"CMakeFiles/httpclient.dir/src/buffersocket.cpp.o" \
+"CMakeFiles/httpclient.dir/src/utils/util.cpp.o"
 
 # External object files for target httpclient
 httpclient_EXTERNAL_OBJECTS =
 
-httpclient: CMakeFiles/httpclient.dir/test.cpp.o
-httpclient: CMakeFiles/httpclient.dir/dns.cpp.o
-httpclient: CMakeFiles/httpclient.dir/request.cpp.o
-httpclient: CMakeFiles/httpclient.dir/http_parser.cpp.o
-httpclient: CMakeFiles/httpclient.dir/httpurl.cpp.o
-httpclient: CMakeFiles/httpclient.dir/httphead.cpp.o
-httpclient: CMakeFiles/httpclient.dir/buffersocket.cpp.o
-httpclient: CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o
-httpclient: CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o
-httpclient: CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o
-httpclient: CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/test.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/dns.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/request.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/http_parser.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/httpurl.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/httphead.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/buffersocket.cpp.o
+httpclient: CMakeFiles/httpclient.dir/src/utils/util.cpp.o
 httpclient: CMakeFiles/httpclient.dir/build.make
+httpclient: src/cppokio/libcppokio.so
+httpclient: src/thread/libgthread.so
 httpclient: CMakeFiles/httpclient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable httpclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gacmy/project/android_lib/cpphttpclient/httplib/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable httpclient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/httpclient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

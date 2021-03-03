@@ -17,6 +17,7 @@ using namespace std;
 
 #define CONTENT_LENGTH "Content-Length"
 #define TRANSFER_ENDING "Transfer-Encoding"
+typedef void (*callback_t)(string callback_data, uint32_t code);
 
 namespace HttpUtil{
     

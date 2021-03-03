@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include "buffersocket.h"
-#include "../utils/util.h"
+#include "./utils/util.h"
 
 
 using namespace std;
@@ -77,33 +77,33 @@ const string& Request::getUrl() const{
   return mUrl.getUrl();
 }
 void writeStateLine(Buffer& buffer){
-  
+
 }
 
 void Request::createRequestBuffer(Buffer& buffer){
-   buffer.writeUtf8(method_str[mMethod]); 
-   buffer.writeUtf8(" ");
-   string path = "";
-   vector<string> paths = mUrl.getPath();
-   for(int i = 0; i < paths.size();i++){
+  buffer.writeUtf8(method_str[mMethod]); 
+  buffer.writeUtf8(" ");
+  string path = "";
+  vector<string> paths = mUrl.getPath();
+  for(int i = 0; i < paths.size();i++){
     if(paths[i] == "/"){
-       path.append(paths[i]);
-     }else{
-        path.append(paths[i]);
-        if(i != paths.size()-1)
-          path.append("/");
-     }
+      path.append(paths[i]);
+    }else{
+      path.append(paths[i]);
+      if(i != paths.size()-1)
+        path.append("/");
+    }
 
-   }
-   string querystr ="";
-   mUrl.getQueryStr(querystr);
+  }
+  string querystr ="";
+  mUrl.getQueryStr(querystr);
 
-   //get param
-   if(mMethod == Method::GET){
-      if(querystr != ""){
-        path.append("?").append(querystr);
-      }
-   }
+  //get param
+  if(mMethod == Method::GET){
+    if(querystr != ""){
+      path.append("?").append(querystr);
+    }
+  }
   buffer.writeUtf8(path);
   buffer.writeUtf8(" ");
   buffer.writeUtf8("HTTP/1.1");
@@ -133,7 +133,7 @@ void Request::createRequestBuffer(Buffer& buffer){
     HttpUtil::genereateParamString(mParams, params);
     if(params != ""){
       if(querystr != "")
-         buffer.writeUtf8("&");
+        buffer.writeUtf8("&");
       string endcodeparam = HttpUtil::urlencode(params);
       buffer.writeUtf8(endcodeparam);
     }
@@ -141,87 +141,96 @@ void Request::createRequestBuffer(Buffer& buffer){
 
 }
 int Request::parseCode(const string& str){
-   vector<string> vec; 
-   HttpUtil::spilt(str, " ", 0, str.size(), vec);
-   mCode = -1;
-   for(string& num:vec){
-     if(HttpUtil::isNum(num)){
-       mCode = atoi(num.c_str());
-     }
-   }
-   return mCode;
+  vector<string> vec; 
+  HttpUtil::spilt(str, " ", 0, str.size(), vec);
+  mCode = -1;
+  for(string& num:vec){
+    if(HttpUtil::isNum(num)){
+      mCode = atoi(num.c_str());
+    }
+  }
+  return mCode;
 }
 
 void Request::request(){
-   Buffer buffer;
+  Buffer buffer;
 
-   createRequestBuffer(buffer);
+  createRequestBuffer(buffer);
 
-   BufferSocket socket(mUrl);
+  BufferSocket socket(mUrl);
 
-   socket.prepare();
+  socket.prepare();
 
-   socket.writeBuffer(buffer);
+  socket.writeBuffer(buffer);
 
-   int n = 0;
-   socket.readLine(buffer);
-   parseCode(buffer.readUtf8());
-   printf("response code:%d\n",mCode);
-   while((n = socket.readLine(buffer)) != 0){
-     string content = buffer.readUtf8();
-     mResonseHead.add(content);
-      //printf("%s\n",buffer.readUtf8().c_str());
-   }
-   for(string str:mResonseHead.getHead()){
-      printf("head::%s\n",str.c_str());
-   }
-   socket.readLine(buffer);
-   string contentlen = buffer.readUtf8();
-   printf("contentLen:%s\n",contentlen.c_str());
-   //chunked end flag
-   int endFlag = 0;
-   if(contentlen == "0"){
+  int n = 0;
+  socket.readLine(buffer);
+  parseCode(buffer.readUtf8());
+  printf("response code:%d\n",mCode);
+  while((n = socket.readLine(buffer)) != 0){
+    string content = buffer.readUtf8();
+    mResonseHead.add(content);
+    //printf("%s\n",buffer.readUtf8().c_str());
+  }
+  for(string str:mResonseHead.getHead()){
+    printf("head::%s\n",str.c_str());
+  }
+  string contentlen = mResonseHead.get(CONTENT_LENGTH);
+  if(contentlen != ""){
+    int len = atoi(contentlen.c_str());
+    if(len == 0){
+      printf("content len is zero finished\n");
+      return;
+    }
+    printf("len:%d\n",len);
+  }
+  socket.readLine(buffer);
+  contentlen = buffer.readUtf8();
+  printf("contentLen:%s\n",contentlen.c_str());
+  //chunked end flag
+  int endFlag = 0;
+  if(contentlen == "0"){
+    endFlag = 2;
+  }
+  while(true){
+    int temp =socket.readLine(buffer);
+    temp = buffer.getSize();
+    string str = buffer.readUtf8();
+    printf("len=%d content=%s\n",temp,str.c_str());
+    if(endFlag == 0 && temp == 1 && str == "0"){
       endFlag = 2;
-   }
-   while(true){
-      int temp =socket.readLine(buffer);
-      temp = buffer.getSize();
-      string str = buffer.readUtf8();
-      printf("len=%d content=%s\n",temp,str.c_str());
-      if(endFlag == 0 && temp == 1 && str == "0"){
-        endFlag = 2;
-      }else if(endFlag == 2 && temp == 0){
-        printf("read finished\n");
-        break;
-      }else{
-        endFlag = 0;
-      }
-   }
-   /**
-   int len = socket._read(buffer, 1024);
-   for(int i = 0; i < len; i++){
-      printf("%x ",buffer.readByte());
-      if(i % 33 == 0)
-        printf("\n");
-   }  
+    }else if(endFlag == 2 && temp == 0){
+      printf("read finished\n");
+      break;
+    }else{
+      endFlag = 0;
+    }
+  }
+  /**
+    int len = socket._read(buffer, 1024);
+    for(int i = 0; i < len; i++){
+    printf("%x ",buffer.readByte());
+    if(i % 33 == 0)
+    printf("\n");
+    }  
    **/
   //socket.readLine()
   /** 
-   printf("write finish buf size %ld\n",buffer.getSize());
-  int len = socket.readLine(buffer); 
-    
-  printf("read size:%ld\n",buffer.getSize());
-  printf("head end line %d\n",len);   
+    printf("write finish buf size %ld\n",buffer.getSize());
+    int len = socket.readLine(buffer); 
 
-  printf("r %d n %d",'\r','\n');
-  byte by1 = buffer.readByte();
-  byte by2 = buffer.readByte();
-  byte by3 = buffer.readByte(); 
-  printf("by1 %x by2 %x by3 %x \n",by1,by2,by3); 
+    printf("read size:%ld\n",buffer.getSize());
+    printf("head end line %d\n",len);   
 
-  socket.readLine(buffer);
-  printf("%s\n",buffer.readUtf8().c_str());
-  **/
+    printf("r %d n %d",'\r','\n');
+    byte by1 = buffer.readByte();
+    byte by2 = buffer.readByte();
+    byte by3 = buffer.readByte(); 
+    printf("by1 %x by2 %x by3 %x \n",by1,by2,by3); 
+
+    socket.readLine(buffer);
+    printf("%s\n",buffer.readUtf8().c_str());
+   **/
 
 }
 

@@ -4,13 +4,13 @@
 #include <unistd.h>
 
 BufferSocket::BufferSocket(HttpUrl& url):mUrl(url){
-  
+
   mFd = socket(AF_INET, SOCK_STREAM, 0);
   if(mFd <= 0){
     printf("create socket failed\n");    
     return;
   }
-   
+
   //jbzero(&servaddr, sizeof(servaddr));
   memset(&servaddr, 0, sizeof(servaddr)); 
   servaddr.sin_family = AF_INET;
@@ -67,29 +67,30 @@ int BufferSocket::readLine(string &line){
 
 
 int BufferSocket::readLine(Buffer& line){
-    char ch;
-    int n;
-    int count;
-    while((n = readbyte(ch)) != -1){
-      if(ch == '\r'){
-        n = readbyte(ch);
-        if(n == -1 || ch == '\n'){
-          return count;
-        }
+  char ch;
+  int n;
+  int count;
+  while((n = readbyte(ch)) != -1){
+    if(ch == '\r'){
+      n = readbyte(ch);
+      if(n == -1 || ch == '\n'){
+        return count;
       }
-      count++;
-      line.writeByte(ch);  
     }
-    return count;
+    count++;
+    line.writeByte(ch);  
+  }
+  return count;
 }
 
 int BufferSocket::_read(Buffer& buffer,const int& byteCount){
-   char ch[byteCount]; 
-   int len = read(mFd, ch, byteCount);
-   if(len > 0)
+  char ch[byteCount]; 
+  int len = read(mFd, ch, byteCount);
+  if(len > 0)
     buffer.write((byte*)ch, len);
-   return len;
+  return len;
 }
+
 int BufferSocket::readbyte(char& ch){
   return read(mFd, &ch, 1);
 }
@@ -104,9 +105,9 @@ int BufferSocket::writeChunked(Buffer &buffer){
   Buffer temp; 
   int len = readLine(temp); 
   //while(true){
-    
-    //buffer.write(temp, temp.getSize());   
- // }
+
+  //buffer.write(temp, temp.getSize());   
+  // }
   return -1;
 }
 

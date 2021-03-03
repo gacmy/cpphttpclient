@@ -123,302 +123,247 @@ httpclient/fast:
 	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/build
 .PHONY : httpclient/fast
 
-buffersocket.o: buffersocket.cpp.o
+#=============================================================================
+# Target rules for targets named cppokio
 
-.PHONY : buffersocket.o
+# Build rule for target.
+cppokio: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cppokio
+.PHONY : cppokio
 
-# target to build an object file
-buffersocket.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/buffersocket.cpp.o
-.PHONY : buffersocket.cpp.o
+# fast build rule for target.
+cppokio/fast:
+	$(MAKE) -f src/cppokio/CMakeFiles/cppokio.dir/build.make src/cppokio/CMakeFiles/cppokio.dir/build
+.PHONY : cppokio/fast
 
-buffersocket.i: buffersocket.cpp.i
+#=============================================================================
+# Target rules for targets named gthread
 
-.PHONY : buffersocket.i
+# Build rule for target.
+gthread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gthread
+.PHONY : gthread
 
-# target to preprocess a source file
-buffersocket.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/buffersocket.cpp.i
-.PHONY : buffersocket.cpp.i
+# fast build rule for target.
+gthread/fast:
+	$(MAKE) -f src/thread/CMakeFiles/gthread.dir/build.make src/thread/CMakeFiles/gthread.dir/build
+.PHONY : gthread/fast
 
-buffersocket.s: buffersocket.cpp.s
+src/buffersocket.o: src/buffersocket.cpp.o
 
-.PHONY : buffersocket.s
-
-# target to generate assembly for a file
-buffersocket.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/buffersocket.cpp.s
-.PHONY : buffersocket.cpp.s
-
-dns.o: dns.cpp.o
-
-.PHONY : dns.o
-
-# target to build an object file
-dns.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/dns.cpp.o
-.PHONY : dns.cpp.o
-
-dns.i: dns.cpp.i
-
-.PHONY : dns.i
-
-# target to preprocess a source file
-dns.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/dns.cpp.i
-.PHONY : dns.cpp.i
-
-dns.s: dns.cpp.s
-
-.PHONY : dns.s
-
-# target to generate assembly for a file
-dns.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/dns.cpp.s
-.PHONY : dns.cpp.s
-
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.o: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o
-
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.o
+.PHONY : src/buffersocket.o
 
 # target to build an object file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.o
+src/buffersocket.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/buffersocket.cpp.o
+.PHONY : src/buffersocket.cpp.o
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.i: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i
+src/buffersocket.i: src/buffersocket.cpp.i
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.i
+.PHONY : src/buffersocket.i
 
 # target to preprocess a source file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.i
+src/buffersocket.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/buffersocket.cpp.i
+.PHONY : src/buffersocket.cpp.i
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.s: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s
+src/buffersocket.s: src/buffersocket.cpp.s
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.s
+.PHONY : src/buffersocket.s
 
 # target to generate assembly for a file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.cpp.s
+src/buffersocket.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/buffersocket.cpp.s
+.PHONY : src/buffersocket.cpp.s
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.o: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o
+src/dns.o: src/dns.cpp.o
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.o
+.PHONY : src/dns.o
 
 # target to build an object file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.o
+src/dns.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/dns.cpp.o
+.PHONY : src/dns.cpp.o
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.i: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i
+src/dns.i: src/dns.cpp.i
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.i
+.PHONY : src/dns.i
 
 # target to preprocess a source file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.i
+src/dns.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/dns.cpp.i
+.PHONY : src/dns.cpp.i
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.s: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s
+src/dns.s: src/dns.cpp.s
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.s
+.PHONY : src/dns.s
 
 # target to generate assembly for a file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.cpp.s
+src/dns.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/dns.cpp.s
+.PHONY : src/dns.cpp.s
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.o: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o
+src/http_parser.o: src/http_parser.cpp.o
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.o
+.PHONY : src/http_parser.o
 
 # target to build an object file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.o
+src/http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/http_parser.cpp.o
+.PHONY : src/http_parser.cpp.o
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.i: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i
+src/http_parser.i: src/http_parser.cpp.i
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.i
+.PHONY : src/http_parser.i
 
 # target to preprocess a source file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.i
+src/http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/http_parser.cpp.i
+.PHONY : src/http_parser.cpp.i
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.s: home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s
+src/http_parser.s: src/http_parser.cpp.s
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.s
+.PHONY : src/http_parser.s
 
 # target to generate assembly for a file
-home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.cpp.s
+src/http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/http_parser.cpp.s
+.PHONY : src/http_parser.cpp.s
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.o: home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o
+src/httphead.o: src/httphead.cpp.o
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.o
+.PHONY : src/httphead.o
 
 # target to build an object file
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.o
+src/httphead.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httphead.cpp.o
+.PHONY : src/httphead.cpp.o
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.i: home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i
+src/httphead.i: src/httphead.cpp.i
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.i
+.PHONY : src/httphead.i
 
 # target to preprocess a source file
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.i
+src/httphead.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httphead.cpp.i
+.PHONY : src/httphead.cpp.i
 
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.s: home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s
+src/httphead.s: src/httphead.cpp.s
 
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.s
+.PHONY : src/httphead.s
 
 # target to generate assembly for a file
-home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s
-.PHONY : home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.cpp.s
+src/httphead.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httphead.cpp.s
+.PHONY : src/httphead.cpp.s
 
-http_parser.o: http_parser.cpp.o
+src/httpurl.o: src/httpurl.cpp.o
 
-.PHONY : http_parser.o
+.PHONY : src/httpurl.o
 
 # target to build an object file
-http_parser.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/http_parser.cpp.o
-.PHONY : http_parser.cpp.o
+src/httpurl.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httpurl.cpp.o
+.PHONY : src/httpurl.cpp.o
 
-http_parser.i: http_parser.cpp.i
+src/httpurl.i: src/httpurl.cpp.i
 
-.PHONY : http_parser.i
+.PHONY : src/httpurl.i
 
 # target to preprocess a source file
-http_parser.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/http_parser.cpp.i
-.PHONY : http_parser.cpp.i
+src/httpurl.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httpurl.cpp.i
+.PHONY : src/httpurl.cpp.i
 
-http_parser.s: http_parser.cpp.s
+src/httpurl.s: src/httpurl.cpp.s
 
-.PHONY : http_parser.s
+.PHONY : src/httpurl.s
 
 # target to generate assembly for a file
-http_parser.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/http_parser.cpp.s
-.PHONY : http_parser.cpp.s
+src/httpurl.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/httpurl.cpp.s
+.PHONY : src/httpurl.cpp.s
 
-httphead.o: httphead.cpp.o
+src/request.o: src/request.cpp.o
 
-.PHONY : httphead.o
+.PHONY : src/request.o
 
 # target to build an object file
-httphead.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httphead.cpp.o
-.PHONY : httphead.cpp.o
+src/request.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/request.cpp.o
+.PHONY : src/request.cpp.o
 
-httphead.i: httphead.cpp.i
+src/request.i: src/request.cpp.i
 
-.PHONY : httphead.i
+.PHONY : src/request.i
 
 # target to preprocess a source file
-httphead.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httphead.cpp.i
-.PHONY : httphead.cpp.i
+src/request.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/request.cpp.i
+.PHONY : src/request.cpp.i
 
-httphead.s: httphead.cpp.s
+src/request.s: src/request.cpp.s
 
-.PHONY : httphead.s
+.PHONY : src/request.s
 
 # target to generate assembly for a file
-httphead.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httphead.cpp.s
-.PHONY : httphead.cpp.s
+src/request.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/request.cpp.s
+.PHONY : src/request.cpp.s
 
-httpurl.o: httpurl.cpp.o
+src/test.o: src/test.cpp.o
 
-.PHONY : httpurl.o
+.PHONY : src/test.o
 
 # target to build an object file
-httpurl.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httpurl.cpp.o
-.PHONY : httpurl.cpp.o
+src/test.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
 
-httpurl.i: httpurl.cpp.i
+src/test.i: src/test.cpp.i
 
-.PHONY : httpurl.i
+.PHONY : src/test.i
 
 # target to preprocess a source file
-httpurl.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httpurl.cpp.i
-.PHONY : httpurl.cpp.i
+src/test.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
 
-httpurl.s: httpurl.cpp.s
+src/test.s: src/test.cpp.s
 
-.PHONY : httpurl.s
+.PHONY : src/test.s
 
 # target to generate assembly for a file
-httpurl.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/httpurl.cpp.s
-.PHONY : httpurl.cpp.s
+src/test.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
 
-request.o: request.cpp.o
+src/utils/util.o: src/utils/util.cpp.o
 
-.PHONY : request.o
+.PHONY : src/utils/util.o
 
 # target to build an object file
-request.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/request.cpp.o
-.PHONY : request.cpp.o
+src/utils/util.cpp.o:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/utils/util.cpp.o
+.PHONY : src/utils/util.cpp.o
 
-request.i: request.cpp.i
+src/utils/util.i: src/utils/util.cpp.i
 
-.PHONY : request.i
-
-# target to preprocess a source file
-request.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/request.cpp.i
-.PHONY : request.cpp.i
-
-request.s: request.cpp.s
-
-.PHONY : request.s
-
-# target to generate assembly for a file
-request.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/request.cpp.s
-.PHONY : request.cpp.s
-
-test.o: test.cpp.o
-
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-
-.PHONY : test.i
+.PHONY : src/utils/util.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/test.cpp.i
-.PHONY : test.cpp.i
+src/utils/util.cpp.i:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/utils/util.cpp.i
+.PHONY : src/utils/util.cpp.i
 
-test.s: test.cpp.s
+src/utils/util.s: src/utils/util.cpp.s
 
-.PHONY : test.s
+.PHONY : src/utils/util.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/test.cpp.s
-.PHONY : test.cpp.s
+src/utils/util.cpp.s:
+	$(MAKE) -f CMakeFiles/httpclient.dir/build.make CMakeFiles/httpclient.dir/src/utils/util.cpp.s
+.PHONY : src/utils/util.cpp.s
 
 # Help Target
 help:
@@ -429,39 +374,32 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... httpclient"
-	@echo "... buffersocket.o"
-	@echo "... buffersocket.i"
-	@echo "... buffersocket.s"
-	@echo "... dns.o"
-	@echo "... dns.i"
-	@echo "... dns.s"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.o"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.i"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/buffer.s"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.o"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.i"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segment.s"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.o"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.i"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/cppokio/segmentpool.s"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.o"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.i"
-	@echo "... home/gacmy/project/android_lib/cpphttpclient/httplib/utils/util.s"
-	@echo "... http_parser.o"
-	@echo "... http_parser.i"
-	@echo "... http_parser.s"
-	@echo "... httphead.o"
-	@echo "... httphead.i"
-	@echo "... httphead.s"
-	@echo "... httpurl.o"
-	@echo "... httpurl.i"
-	@echo "... httpurl.s"
-	@echo "... request.o"
-	@echo "... request.i"
-	@echo "... request.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... cppokio"
+	@echo "... gthread"
+	@echo "... src/buffersocket.o"
+	@echo "... src/buffersocket.i"
+	@echo "... src/buffersocket.s"
+	@echo "... src/dns.o"
+	@echo "... src/dns.i"
+	@echo "... src/dns.s"
+	@echo "... src/http_parser.o"
+	@echo "... src/http_parser.i"
+	@echo "... src/http_parser.s"
+	@echo "... src/httphead.o"
+	@echo "... src/httphead.i"
+	@echo "... src/httphead.s"
+	@echo "... src/httpurl.o"
+	@echo "... src/httpurl.i"
+	@echo "... src/httpurl.s"
+	@echo "... src/request.o"
+	@echo "... src/request.i"
+	@echo "... src/request.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
+	@echo "... src/utils/util.o"
+	@echo "... src/utils/util.i"
+	@echo "... src/utils/util.s"
 .PHONY : help
 
 

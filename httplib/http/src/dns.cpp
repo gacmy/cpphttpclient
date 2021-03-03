@@ -27,7 +27,7 @@ void Dns::getIpByName(Result* res){
   res->name = m_host;
 }
 /**
-int main(){
+  int main(){
   struct hostent* ht1 = 0; 
   const char* name = "www.baidu.com";//"www.baidu.com";
   Dns dns(name);
@@ -35,6 +35,6 @@ int main(){
   dns.getIpByName(&res);
   res.print();
   return 0;
-}
-**/
+  }
+ **/
 

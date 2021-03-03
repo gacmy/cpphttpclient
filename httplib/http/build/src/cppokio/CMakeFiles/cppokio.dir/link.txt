@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libcppokio.so -o libcppokio.so CMakeFiles/cppokio.dir/buffer.cpp.o CMakeFiles/cppokio.dir/segment.cpp.o CMakeFiles/cppokio.dir/segmentpool.cpp.o 

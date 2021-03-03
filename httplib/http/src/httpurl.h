@@ -48,24 +48,24 @@ class HttpUrl{
     }
     void print();
   private:
-   string host;  
-   vector<string> query;  
-   string scheme;
-   string url;
-   vector<string> path; 
-   int port;
+    string host;  
+    vector<string> query;  
+    string scheme;
+    string url;
+    vector<string> path; 
+    int port;
 
-   bool is_ip;
+    bool is_ip;
 
-   int parseScheme(string& url,int pos,int end);
+    int parseScheme(string& url,int pos,int end);
 
-   int parseHost(string& url,int pos,int end);
+    int parseHost(string& url,int pos,int end);
 
-   int parsePort(string& url,int pos);
+    int parsePort(string& url,int pos);
 
-   int parsePaths(string& url,int pos);
+    int parsePaths(string& url,int pos);
 
-   int parseQuery(string& url,int pos);
+    int parseQuery(string& url,int pos);
 
 };
 #endif
