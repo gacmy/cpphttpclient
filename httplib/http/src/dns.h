@@ -27,7 +27,6 @@ class Dns{
           }else{
             cout<<"ipv4"<<endl;
           }
-          
           for(int i = 0; i < ips.size();i++){
             cout<<"ip:["<<i<<"] "<<ips[i]<<endl;
           }

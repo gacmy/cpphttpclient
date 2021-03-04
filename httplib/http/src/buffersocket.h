@@ -34,7 +34,6 @@ class BufferSocket{
 
     int writeChunked(Buffer& buffer);
 
-    
 
   private:
 

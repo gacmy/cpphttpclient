@@ -76,6 +76,7 @@ string Request::getHead(string key){
 const string& Request::getUrl() const{
   return mUrl.getUrl();
 }
+
 void writeStateLine(Buffer& buffer){
 
 }
@@ -138,8 +139,8 @@ void Request::createRequestBuffer(Buffer& buffer){
       buffer.writeUtf8(endcodeparam);
     }
   }
-
 }
+
 int Request::parseCode(const string& str){
   vector<string> vec; 
   HttpUtil::spilt(str, " ", 0, str.size(), vec);

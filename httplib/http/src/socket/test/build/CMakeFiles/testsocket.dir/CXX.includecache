@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/client_socket.h
+socket.h
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/socket.h
+
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/inputstream.h
+
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/outputstream.h
+
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/socket.h
+netinet/in.h
+-
+string
+-
+inputstream.h
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/inputstream.h
+outputstream.h
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/outputstream.h
+
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/test.cpp
+../client_socket.h
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/client_socket.h
+

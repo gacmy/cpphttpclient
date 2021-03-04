@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/build",
+  "command": "/usr/bin/c++   -I/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/..  -g   -o CMakeFiles/testsocket.dir/test.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/test.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/test.cpp"
+}
+]

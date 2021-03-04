@@ -1,0 +1,3 @@
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/build/CMakeFiles/rebuild_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/build/CMakeFiles/edit_cache.dir
+/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/build/CMakeFiles/testsocket.dir

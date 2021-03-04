@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/test.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/client_socket.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/client_socket.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/client_socket.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/inputstream.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/inputstream.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/inputstream.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/outputstream.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/outputstream.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/outputstream.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/real_inputstream.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/real_inputstream.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/real_inputstream.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/real_outputstream.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/real_outputstream.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/real_outputstream.cpp"
+},
+{
+  "directory": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/socket.dir/socket.cpp.o -c /home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/socket.cpp",
+  "file": "/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/socket.cpp"
+}
+]

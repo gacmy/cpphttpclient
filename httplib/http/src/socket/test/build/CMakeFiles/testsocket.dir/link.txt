@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testsocket.dir/test.cpp.o  -o testsocket   -L/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/../lib  -Wl,-rpath,/home/gacmy/project/android_lib/cpphttpclient/httplib/http/src/socket/test/../lib -lsocket 
