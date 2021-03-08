@@ -9,7 +9,6 @@
 class Request{
   private:
       static const char* method_str[];
-   
 
   public:
     enum Method{POST,GET} ;
@@ -19,7 +18,7 @@ class Request{
     Request(const Request& req);
 
     Request& operator=(const Request& req);
-  
+
 
     Request& addHead(string key,string value);
 
@@ -36,7 +35,7 @@ class Request{
 
     uint8_t* get(); 
 
-     
+ 
   private:
     //create request buffer
     void createRequestBuffer(Buffer& buf);
@@ -47,7 +46,7 @@ class Request{
     HttpHead mResonseHead;
     int parseCode(const string& str); 
     int mCode;
-    
+
     int mPort;
 };
 

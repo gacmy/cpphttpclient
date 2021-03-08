@@ -42,6 +42,8 @@ class OutputStream{
     int _write(char* chs,int len);
 
     int _write(char* chs, int off, int len); 
+    virtual void settimeout(int seconds){
+    }
 
     virtual void flush();
 

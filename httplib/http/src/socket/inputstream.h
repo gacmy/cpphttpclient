@@ -19,7 +19,7 @@ class InputStream{
     virtual int _close();
     
     virtual void settimeout(int seconds){
-    };
+    }
 
     virtual int readByte(char& ch);
 

@@ -51,7 +51,7 @@ void BufferSocket::_close(){
 }
 
 BufferSocket::~BufferSocket(){
-  _close();  
+  _close();
 }
 
 int BufferSocket::prepare(){
@@ -78,7 +78,7 @@ int BufferSocket::readLine(Buffer& line){
       }
     }
     count++;
-    line.writeByte(ch);  
+    line.writeByte(ch);
   }
   return count;
 }
